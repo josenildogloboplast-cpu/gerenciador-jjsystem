@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de Tarefas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="login-container" class="card">
+    <h2>Login</h2>
+    <input type="text" id="username" placeholder="Usuário">
+    <input type="password" id="password" placeholder="Senha">
+    <button onclick="login()">Entrar</button>
+</div>
+
+<div id="app-container" class="hidden card">
+    <h2>Suas Tarefas</h2>
+    <div class="task-input">
+        <input type="text" id="task-text" placeholder="Digite uma tarefa...">
+        <button onclick="addTask()">Adicionar</button>
+    </div>
+    <ul id="task-list"></ul>
+
+    <button class="logout-btn" onclick="logout()">Sair</button>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
